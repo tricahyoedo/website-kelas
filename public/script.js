@@ -12,10 +12,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Modal Logic for Gallery
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("expandedImg");
-
 function openModal(imgSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("expandedImg");
+    if(!modal || !modalImg) return;
     modal.style.display = "flex";
     modal.style.justifyContent = "center";
     modal.style.alignItems = "center";
@@ -24,35 +24,41 @@ function openModal(imgSrc) {
 }
 
 function closeModal() {
+    const modal = document.getElementById("imageModal");
+    if(!modal) return;
     modal.style.display = "none";
     document.body.style.overflow = "auto"; // Re-enable scrolling
 }
 
 // Close modal when clicking outside the image
-modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById("imageModal");
+    if (modal && e.target === modal) {
         closeModal();
     }
 });
 
 // Close modal on Escape key
 document.addEventListener('keydown', function(e) {
-    if (e.key === "Escape" && modal.style.display === "flex") {
+    const modal = document.getElementById("imageModal");
+    if (modal && e.key === "Escape" && modal.style.display === "flex") {
         closeModal();
     }
 });
 
 // Member Modal Logic
-const memberModal = document.getElementById("memberModal");
-const memberImg = document.getElementById("memberImg");
-const memberName = document.getElementById("memberName");
-const memberNis = document.getElementById("memberNis");
-const memberTempatLahir = document.getElementById("memberTempatLahir");
-const memberTanggalLahir = document.getElementById("memberTanggalLahir");
-const memberAlamat = document.getElementById("memberAlamat");
-const memberKarakteristik = document.getElementById("memberKarakteristik");
-
 function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, alamat, karakteristik) {
+    const memberModal = document.getElementById("memberModal");
+    const memberImg = document.getElementById("memberImg");
+    const memberName = document.getElementById("memberName");
+    const memberNis = document.getElementById("memberNis");
+    const memberTempatLahir = document.getElementById("memberTempatLahir");
+    const memberTanggalLahir = document.getElementById("memberTanggalLahir");
+    const memberAlamat = document.getElementById("memberAlamat");
+    const memberKarakteristik = document.getElementById("memberKarakteristik");
+    
+    if(!memberModal) return;
+
     memberModal.style.display = "flex";
     memberModal.style.justifyContent = "center";
     memberModal.style.alignItems = "center";
@@ -67,20 +73,24 @@ function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, alamat, k
 }
 
 function closeMemberModal() {
+    const memberModal = document.getElementById("memberModal");
+    if(!memberModal) return;
     memberModal.style.display = "none";
     document.body.style.overflow = "auto";
 }
 
 // Close member modal when clicking outside the content
-memberModal.addEventListener('click', function(e) {
-    if (e.target === memberModal) {
+document.addEventListener('click', function(e) {
+    const memberModal = document.getElementById("memberModal");
+    if (memberModal && e.target === memberModal) {
         closeMemberModal();
     }
 });
 
 // Close member modal on Escape key
 document.addEventListener('keydown', function(e) {
-    if (e.key === "Escape" && memberModal.style.display === "flex") {
+    const memberModal = document.getElementById("memberModal");
+    if (memberModal && e.key === "Escape" && memberModal.style.display === "flex") {
         closeMemberModal();
     }
 });
@@ -148,8 +158,7 @@ function filterGallery(category, buttonElement) {
     });
 }
 
-// Initial filter for the default active tab (Ketiga)
-document.addEventListener('DOMContentLoaded', () => {
+function initInteractions() {
     filterGallery('ketiga', document.querySelector('.tab-btn.active'));
     // Attach click listeners to gallery items so modal opens the corresponding thumbnail
     document.querySelectorAll('.gallery-item').forEach(item => {
@@ -177,4 +186,11 @@ document.addEventListener('DOMContentLoaded', () => {
             openMemberModal(img, name, nis, tempatLahir, tanggalLahir, alamat, karakteristik);
         });
     });
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initInteractions);
+} else {
+    // Run immediately if the document is already loaded
+    setTimeout(initInteractions, 100);
+}
