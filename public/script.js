@@ -15,7 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function openModal(imgSrc) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("expandedImg");
-    if(!modal || !modalImg) return;
+    if (!modal || !modalImg) return;
     modal.style.display = "flex";
     modal.style.justifyContent = "center";
     modal.style.alignItems = "center";
@@ -25,13 +25,13 @@ function openModal(imgSrc) {
 
 function closeModal() {
     const modal = document.getElementById("imageModal");
-    if(!modal) return;
+    if (!modal) return;
     modal.style.display = "none";
     document.body.style.overflow = "auto"; // Re-enable scrolling
 }
 
 // Close modal when clicking outside the image
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     const modal = document.getElementById("imageModal");
     if (modal && e.target === modal) {
         closeModal();
@@ -39,7 +39,7 @@ document.addEventListener('click', function(e) {
 });
 
 // Close modal on Escape key
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     const modal = document.getElementById("imageModal");
     if (modal && e.key === "Escape" && modal.style.display === "flex") {
         closeModal();
@@ -56,8 +56,8 @@ function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, alamat, k
     const memberTanggalLahir = document.getElementById("memberTanggalLahir");
     const memberAlamat = document.getElementById("memberAlamat");
     const memberKarakteristik = document.getElementById("memberKarakteristik");
-    
-    if(!memberModal) return;
+
+    if (!memberModal) return;
 
     memberModal.style.display = "flex";
     memberModal.style.justifyContent = "center";
@@ -74,13 +74,13 @@ function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, alamat, k
 
 function closeMemberModal() {
     const memberModal = document.getElementById("memberModal");
-    if(!memberModal) return;
+    if (!memberModal) return;
     memberModal.style.display = "none";
     document.body.style.overflow = "auto";
 }
 
 // Close member modal when clicking outside the content
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     const memberModal = document.getElementById("memberModal");
     if (memberModal && e.target === memberModal) {
         closeMemberModal();
@@ -88,7 +88,7 @@ document.addEventListener('click', function(e) {
 });
 
 // Close member modal on Escape key
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     const memberModal = document.getElementById("memberModal");
     if (memberModal && e.key === "Escape" && memberModal.style.display === "flex") {
         closeMemberModal();
@@ -96,7 +96,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // Navbar scroll effect
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
         nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
@@ -170,19 +170,19 @@ function initInteractions() {
         });
     });
 
-    // Attach click listeners to anggota cards
-    document.querySelectorAll('.anggota-card').forEach(card => {
+    // Attach click listeners to anggota cards and wali kelas
+    document.querySelectorAll('.anggota-card, .wali-kelas').forEach(card => {
         card.style.cursor = 'pointer';
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             const img = card.querySelector('img') ? card.querySelector('img').src : '';
             const name = card.querySelector('h3') ? card.querySelector('h3').textContent : 'Nama tidak diketahui';
             const nis = card.querySelector('p') ? card.querySelector('p').textContent : 'NIS tidak diketahui';
-            
+
             const tempatLahir = card.getAttribute('data-tempat-lahir');
             const tanggalLahir = card.getAttribute('data-tanggal-lahir');
             const alamat = card.getAttribute('data-alamat');
             const karakteristik = card.getAttribute('data-karakteristik');
-            
+
             openMemberModal(img, name, nis, tempatLahir, tanggalLahir, alamat, karakteristik);
         });
     });

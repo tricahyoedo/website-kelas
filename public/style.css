@@ -575,13 +575,8 @@ nav {
     height: 160px;
     border-radius: 20px;
     object-fit: cover;
-    border: 4px solid transparent;
     background: linear-gradient(135deg, var(--primary), var(--accent)) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
     box-shadow: 0 10px 25px rgba(255, 51, 102, 0.2);
-    /* Alternative if mask breaks */
     border: 4px solid var(--accent);
 }
 

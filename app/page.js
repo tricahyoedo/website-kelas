@@ -48,11 +48,11 @@ export default function Home() {
                     <h2 className="section-title">Struktur Organisasi Kelas</h2>
                     <div className="org-grid">
                         {/* Wali Kelas */}
-                        <div className="card wali-kelas">
+                        <div className="card wali-kelas" data-tempat-lahir="-" data-tanggal-lahir="-" data-alamat="-" data-karakteristik="Membimbing siswa-siswi RPL 2 dengan sabar dan penuh dedikasi.">
                             <div className="card-img">
                                 <img src="p.faruks.jpeg" alt="Wali Kelas" />
                             </div>
-                            <h3>Bpk/Ibu Guru</h3>
+                            <h3>Bapak Farukh</h3>
                             <p>Wali Kelas</p>
                         </div>
 
