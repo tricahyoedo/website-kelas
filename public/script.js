@@ -47,14 +47,13 @@ document.addEventListener('keydown', function (e) {
 });
 
 // Member Modal Logic
-function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, alamat, karakteristik) {
+function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, karakteristik) {
     const memberModal = document.getElementById("memberModal");
     const memberImg = document.getElementById("memberImg");
     const memberName = document.getElementById("memberName");
     const memberNis = document.getElementById("memberNis");
     const memberTempatLahir = document.getElementById("memberTempatLahir");
     const memberTanggalLahir = document.getElementById("memberTanggalLahir");
-    const memberAlamat = document.getElementById("memberAlamat");
     const memberKarakteristik = document.getElementById("memberKarakteristik");
 
     if (!memberModal) return;
@@ -67,7 +66,6 @@ function openMemberModal(imgSrc, name, nis, tempatLahir, tanggalLahir, alamat, k
     memberNis.textContent = nis;
     memberTempatLahir.textContent = tempatLahir || "-";
     memberTanggalLahir.textContent = tanggalLahir || "-";
-    memberAlamat.textContent = alamat || "-";
     memberKarakteristik.textContent = karakteristik || "Siswa yang rajin, disiplin, dan memiliki semangat belajar yang tinggi.";
     document.body.style.overflow = "hidden";
 }
@@ -180,10 +178,9 @@ function initInteractions() {
 
             const tempatLahir = card.getAttribute('data-tempat-lahir');
             const tanggalLahir = card.getAttribute('data-tanggal-lahir');
-            const alamat = card.getAttribute('data-alamat');
             const karakteristik = card.getAttribute('data-karakteristik');
 
-            openMemberModal(img, name, nis, tempatLahir, tanggalLahir, alamat, karakteristik);
+            openMemberModal(img, name, nis, tempatLahir, tanggalLahir, karakteristik);
         });
     });
 }

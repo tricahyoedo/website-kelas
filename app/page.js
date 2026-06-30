@@ -48,7 +48,7 @@ export default function Home() {
                     <h2 className="section-title">Struktur Organisasi Kelas</h2>
                     <div className="org-grid">
                         {/* Wali Kelas */}
-                        <div className="card wali-kelas" data-tempat-lahir="-" data-tanggal-lahir="-" data-alamat="-" data-karakteristik="Membimbing siswa-siswi RPL 2 dengan sabar dan penuh dedikasi.">
+                        <div className="card wali-kelas" data-tempat-lahir="-" data-tanggal-lahir="-" data-karakteristik="Membimbing siswa-siswi RPL 2 dengan sabar dan penuh dedikasi.">
                             <div className="card-img">
                                 <img src="p.faruks.jpeg" alt="Wali Kelas" />
                             </div>
@@ -102,7 +102,6 @@ export default function Home() {
                     <div className="anggota-grid">
                         {/* Tambahkan anggota kelas di sini */}
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="intan.png" alt="Intan" />
@@ -111,7 +110,6 @@ export default function Home() {
                             <p>NIS: 1001</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Papua" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="etow.png" alt="Etow" />
@@ -120,7 +118,6 @@ export default function Home() {
                             <p>NIS: 1002</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="kenza.png"
@@ -130,7 +127,6 @@ export default function Home() {
                             <p>NIS: 1003</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="keyla.png" alt="Keyla" />
@@ -139,7 +135,6 @@ export default function Home() {
                             <p>NIS: 1004</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="keysa.png"
@@ -149,7 +144,6 @@ export default function Home() {
                             <p>NIS: 1005</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Paleran" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="khoirun.png"
@@ -159,7 +153,6 @@ export default function Home() {
                             <p>NIS: 1006</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="latif.png"
@@ -169,7 +162,6 @@ export default function Home() {
                             <p>NIS: 1007</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="cella.png"
@@ -179,7 +171,6 @@ export default function Home() {
                             <p>NIS: 1008</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="melani.png" alt="Meilani" />
@@ -188,7 +179,6 @@ export default function Home() {
                             <p>NIS: 1009</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="mita.png" alt="Mita" />
@@ -197,7 +187,6 @@ export default function Home() {
                             <p>NIS: 1010</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Beteng SidoMekar"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="finza.png" alt="finza" />
@@ -206,7 +195,6 @@ export default function Home() {
                             <p>NIS: 1011</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Sukoreno" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="alpha.png" alt="Alpha" />
@@ -215,7 +203,6 @@ export default function Home() {
                             <p>NIS: 1012</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Paleran" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="apan.png" alt="apan" />
@@ -224,7 +211,6 @@ export default function Home() {
                             <p>NIS: 1013</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Wringintelu" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="wawa.png"
@@ -234,7 +220,6 @@ export default function Home() {
                             <p>NIS: 1014</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="natasha.png"
@@ -244,7 +229,6 @@ export default function Home() {
                             <p>NIS: 1015</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Wringintelu" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="nika.png"
@@ -254,7 +238,6 @@ export default function Home() {
                             <p>NIS: 1016</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="nofi.png"
@@ -264,7 +247,6 @@ export default function Home() {
                             <p>NIS: 1017</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="laili.png"
@@ -274,7 +256,6 @@ export default function Home() {
                             <p>NIS: 1018</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="nurin.png"
@@ -284,7 +265,6 @@ export default function Home() {
                             <p>NIS: 1019</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="widya.png"
@@ -294,7 +274,6 @@ export default function Home() {
                             <p>NIS: 1020</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="rahil.png"
@@ -304,7 +283,6 @@ export default function Home() {
                             <p>NIS: 1021</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tanggul" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="rara.png"
@@ -314,7 +292,6 @@ export default function Home() {
                             <p>NIS: 1022</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Karang Duren" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="lina.png"
@@ -324,7 +301,6 @@ export default function Home() {
                             <p>NIS: 1023</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Paleran" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="risma.png"
@@ -334,7 +310,6 @@ export default function Home() {
                             <p>NIS: 1024</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="rani.png"
@@ -344,7 +319,6 @@ export default function Home() {
                             <p>NIS: 1025</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="ayu.png"
@@ -354,7 +328,6 @@ export default function Home() {
                             <p>NIS: 1026</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="eka.png"
@@ -364,7 +337,6 @@ export default function Home() {
                             <p>NIS: 1027</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="safira.png"
@@ -374,7 +346,6 @@ export default function Home() {
                             <p>NIS: 1028</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tanggul" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="ayun.png"
@@ -384,7 +355,6 @@ export default function Home() {
                             <p>NIS: 1029</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="silvi.png"
@@ -394,7 +364,6 @@ export default function Home() {
                             <p>NIS: 1030</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="chaca.png"
@@ -404,7 +373,6 @@ export default function Home() {
                             <p>NIS: 1031</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="sisil.png"
@@ -414,7 +382,6 @@ export default function Home() {
                             <p>NIS: 1032</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="azzahrotun.png"
@@ -424,7 +391,6 @@ export default function Home() {
                             <p>NIS: 1033</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Jember" data-tanggal-lahir="12 Desember 2009"
-                            data-alamat="Jl. Bagon Desa Jambearum"
                             data-karakteristik=" Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="oke.jpeg" alt="Edooo" />
@@ -433,7 +399,6 @@ export default function Home() {
                             <p>NIS: 1034</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Gadungan" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="verdi.png" alt="Verdi" />
@@ -442,7 +407,6 @@ export default function Home() {
                             <p>NIS: 1035</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="puji.png"
@@ -452,7 +416,6 @@ export default function Home() {
                             <p>NIS: 1036</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Puger" data-tanggal-lahir="15 Maret 2005"
-                            data-alamat="Jl. Sudirman No. 45"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
                             <div className="card-img">
                                 <img src="wardah.png"
@@ -570,7 +533,6 @@ export default function Home() {
                             <div className="member-details">
                                 <p><strong>Tempat Lahir</strong>: <span id="memberTempatLahir">-</span></p>
                                 <p><strong>Tanggal Lahir</strong>: <span id="memberTanggalLahir">-</span></p>
-                                <p><strong>Alamat Rumah</strong>: <span id="memberAlamat">-</span></p>
                                 <p><strong>Karakteristik</strong>: <span id="memberKarakteristik">-</span></p>
                             </div>
                         </div>
