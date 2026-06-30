@@ -633,3 +633,118 @@ footer {
         margin-bottom: 6px;
     }
 }
+/* Theme Toggle Button */
+.theme-toggle {
+    background: var(--clay-card);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--clay-shadow), var(--clay-inner-light), var(--clay-inner-dark);
+    transition: all 0.3s ease;
+    color: var(--text-main);
+    margin-left: 20px;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Dark Mode Overrides (Glassmorphism Reverted) */
+[data-theme="dark"] {
+    --bg-main: #08040f;
+    --clay-card: rgba(23, 16, 38, 0.6);
+    --clay-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --clay-inner-light: none;
+    --clay-inner-dark: none;
+    
+    --clay-btn: linear-gradient(135deg, #FF3366 0%, #7C3AED 100%);
+    --clay-btn-shadow: 0 10px 20px rgba(255, 51, 102, 0.25);
+    --clay-btn-inner-light: none;
+    --clay-btn-inner-dark: none;
+    
+    --primary: #FF3366;
+    --accent: #7C3AED;
+    --text-main: #ffffff;
+    --text-light: #cbd5e1;
+    --white: #ffffff;
+    
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] body {
+    background-image:
+        radial-gradient(circle at 85% 15%, rgba(255, 51, 102, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 15% 85%, rgba(124, 58, 237, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(31, 19, 51, 0.5) 0%, transparent 60%);
+    background-attachment: fixed;
+}
+
+[data-theme="dark"] .card, 
+[data-theme="dark"] .anggota-card, 
+[data-theme="dark"] nav, 
+[data-theme="dark"] .modal-content, 
+[data-theme="dark"] .member-modal-content,
+[data-theme="dark"] .tentang-image,
+[data-theme="dark"] .card-img,
+[data-theme="dark"] .anggota-card .card-img,
+[data-theme="dark"] .tab-btn,
+[data-theme="dark"] .gallery-item,
+[data-theme="dark"] footer,
+[data-theme="dark"] .theme-toggle {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+}
+
+[data-theme="dark"] .card-img, [data-theme="dark"] .anggota-card .card-img {
+    padding: 0;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .card-img img,
+[data-theme="dark"] .anggota-card img {
+    border: none;
+}
+
+[data-theme="dark"] .gallery-item img {
+    border: none;
+}
+
+[data-theme="dark"] .btn,
+[data-theme="dark"] .tab-btn.active {
+    background: var(--clay-btn);
+    border: none;
+}
+
+[data-theme="dark"] .member-modal-right h3 {
+    background: linear-gradient(135deg, #fff 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .member-modal-right .member-nis {
+    background: transparent;
+    border: 1px solid var(--primary);
+}
+
+[data-theme="dark"] .nav-links a:hover {
+    background: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+
+[data-theme="dark"] h2.section-title {
+    background: linear-gradient(135deg, #fff 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .tentang-image {
+    padding: 0;
+}

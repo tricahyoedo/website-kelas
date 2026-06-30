@@ -158,23 +158,27 @@ function filterGallery(category, buttonElement) {
 
 function initInteractions() {
     filterGallery('pertama', document.querySelector('.tab-btn.active'));
+    // Initialize Theme Toggle
+    initThemeToggle();
+
     // Attach click listeners to gallery items so modal opens the corresponding thumbnail
     document.querySelectorAll('.gallery-item').forEach(item => {
         item.addEventListener('click', function (e) {
-            const img = item.querySelector('img');
-            if (img && img.src) {
-                openModal(img.src);
-            }
+            e.preventDefault();
+            const imgSrc = this.querySelector('img').src;
+            openModal(imgSrc);
         });
     });
 
-    // Attach click listeners to anggota cards and wali kelas
+    // Attach click listeners to anggota cards so modal opens the corresponding data
     document.querySelectorAll('.anggota-card, .wali-kelas').forEach(card => {
-        card.style.cursor = 'pointer';
         card.addEventListener('click', function () {
-            const img = card.querySelector('img') ? card.querySelector('img').src : '';
-            const name = card.querySelector('h3') ? card.querySelector('h3').textContent : 'Nama tidak diketahui';
-            const nis = card.querySelector('p') ? card.querySelector('p').textContent : 'NIS tidak diketahui';
+            const img = card.querySelector('img').src;
+            const name = card.querySelector('h3').textContent;
+            
+            // Periksa apakah ini wali kelas (tidak punya p dengan NIS)
+            const nisElement = card.querySelector('p');
+            const nis = nisElement && nisElement.textContent.includes('NIS') ? nisElement.textContent : 'Wali Kelas';
 
             const tempatLahir = card.getAttribute('data-tempat-lahir');
             const tanggalLahir = card.getAttribute('data-tanggal-lahir');
@@ -182,6 +186,23 @@ function initInteractions() {
 
             openMemberModal(img, name, nis, tempatLahir, tanggalLahir, karakteristik);
         });
+    });
+}
+
+function initThemeToggle() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn) return;
+    
+    // Check initial state
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    toggleBtn.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    toggleBtn.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        let newTheme = theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        toggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
     });
 }
 

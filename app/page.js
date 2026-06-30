@@ -15,6 +15,9 @@ export default function Home() {
                     <li><a href="#struktur">Pengurus</a></li>
                     <li><a href="#galeri">Galeri</a></li>
                 </ul>
+                <button id="theme-toggle" className="theme-toggle" aria-label="Toggle Dark Mode">
+                    🌙
+                </button>
             </nav>
 
             <section id="hero" className="hero">
