@@ -36,11 +36,9 @@ export default function Home() {
                         style={{ textAlign: 'left', marginTop: '40px', maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto' }}>
                         <h3 style={{ fontSize: '1.8rem', color: 'var(--text-main)', marginBottom: '15px' }}>Siapa Kami?</h3>
                         <p style={{ marginBottom: '15px', color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem' }}>Kami
-                            adalah komunitas Rekayasa Perangkat Lunak yang berdedikasi untuk terus meningkatkan kemampuan
-                            programming dan berinovasi di bidang teknologi.</p>
-                        <p style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem' }}>Dibentuk pada tahun 2023, kami
-                            telah berkembang menjadi keluarga yang solid dengan semangat belajar yang tinggi untuk meraih
-                            cita-cita bersama.</p>
+                            Kami adalah siswa-siswi Rekayasa Perangkat Lunak (RPL) 2 yang dibimbing oleh <b>Bapak Farukh</b>. Kami memiliki semangat untuk terus belajar, bekerja sama, dan mengembangkan kemampuan di bidang pemrograman serta teknologi informasi.</p>
+                        <p style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem' }}>Dibentuk pada tahun 2024, kami
+                            Melalui kebersamaan di kelas, kami saling mendukung untuk meraih prestasi, membangun pengalaman, dan mempersiapkan diri menjadi generasi yang siap menghadapi dunia kerja maupun pendidikan yang lebih tinggi.</p>
                     </div>
                 </div>
             </section>
