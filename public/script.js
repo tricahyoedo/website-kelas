@@ -175,7 +175,7 @@ function initInteractions() {
         card.addEventListener('click', function () {
             const img = card.querySelector('img').src;
             const name = card.querySelector('h3').textContent;
-            
+
             // Periksa apakah ini wali kelas (tidak punya p dengan NIS)
             const nisElement = card.querySelector('p');
             const nis = nisElement && nisElement.textContent.includes('NIS') ? nisElement.textContent : 'Wali Kelas';
@@ -192,7 +192,7 @@ function initInteractions() {
 function initThemeToggle() {
     const toggleBtn = document.getElementById('theme-toggle');
     if (!toggleBtn) return;
-    
+
     // Check initial state
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
     toggleBtn.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
@@ -203,6 +203,14 @@ function initThemeToggle() {
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         toggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+
+        // Tambahkan efek animasi ke gambar saat tema diganti
+        const images = document.querySelectorAll('.card-img img, .anggota-card img, .gallery-item img, .tentang-img');
+        images.forEach(img => {
+            img.classList.remove('theme-animate');
+            void img.offsetWidth; // trigger reflow
+            img.classList.add('theme-animate');
+        });
     });
 }
 
