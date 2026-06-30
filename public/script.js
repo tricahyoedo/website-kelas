@@ -159,7 +159,7 @@ function filterGallery(category, buttonElement) {
 }
 
 function initInteractions() {
-    filterGallery('ketiga', document.querySelector('.tab-btn.active'));
+    filterGallery('pertama', document.querySelector('.tab-btn.active'));
     // Attach click listeners to gallery items so modal opens the corresponding thumbnail
     document.querySelectorAll('.gallery-item').forEach(item => {
         item.addEventListener('click', function (e) {

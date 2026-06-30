@@ -469,9 +469,9 @@ export default function Home() {
                 <div className="container">
                     <h2 className="section-title">Album Kegiatan</h2>
                     <div className="album-tabs">
-                        <button className="tab-btn" onClick={(e) => window.filterGallery('pertama', e.currentTarget)}>Pertama</button>
+                        <button className="tab-btn active" onClick={(e) => window.filterGallery('pertama', e.currentTarget)}>Pertama</button>
                         <button className="tab-btn" onClick={(e) => window.filterGallery('kedua', e.currentTarget)}>Kedua</button>
-                        <button className="tab-btn active" onClick={(e) => window.filterGallery('ketiga', e.currentTarget)}>Ketiga</button>
+                        <button className="tab-btn" onClick={(e) => window.filterGallery('ketiga', e.currentTarget)}>Ketiga</button>
                     </div>
                     <div className="gallery-grid">
                         <div className="gallery-item pertama" style={{ display: 'none' }}>
