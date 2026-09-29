@@ -440,75 +440,75 @@ export default function Home() {
                         <button className="tab-btn" onClick={(e) => window.filterGallery('ketiga', e.currentTarget)}>Ketiga</button>
                     </div>
                     <div className="gallery-grid">
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('mpls.jpeg', 'Kegiatan 1')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('mpls.jpeg', 'Masa MPLS, dimana semua murid saling berkenalan satu sama lain bersama teman barunya.')}>
                             <img src="mpls.jpeg" alt="Kegiatan 1" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('senam.jpeg', 'Kegiatan 2')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('senam.jpeg', 'Ikut melaksanakan lomba joget kreasi, serta meramaikan acara kemerdekaan.')}>
                             <img src="senam.jpeg" alt="Kegiatan 2" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('ultah.jpeg', 'Kegiatan 3')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('ultah.jpeg', 'Memberikan suprice HARI GURU kepada wali kelas.')}>
                             <img src="ultah.jpeg" alt="Kegiatan 3" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('padsu.jpeg', 'Kegiatan 4')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('padsu.jpeg', 'Melaksanakan lomba terakhir pada saat MPLS, Yaitu lomba Paduan Suara.')}>
                             <img src="padsu.jpeg" alt="Kegiatan 4" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('kerkom.jpeg', 'Kegiatan 5')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('kerkom.jpeg', 'First Time kerja kelompok Di rumah mbak Intan.')}>
                             <img src="kerkom.jpeg" alt="Kegiatan 5" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('515.jpeg', 'Kegiatan 6')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('515.jpeg', 'Menginap di barak militer 515 di tanggul pada saat hari terakhir MPLS, selama 2 Hari 1 Malam.')}>
                             <img src="515.jpeg" alt="Kegiatan 6" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('metal.jpeg', 'Kegiatan 7')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('metal.jpeg', 'Deskripsi untuk Kegiatan 7: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="metal.jpeg" alt="Kegiatan 7" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('ngaji.jpeg', 'Kegiatan 8')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('ngaji.jpeg', 'Meperingati hari Maulid Nabi Muhammad SAW pada saat kelas 10.')}>
                             <img src="ngaji.jpeg" alt="Kegiatan 8" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('maulid.jpeg', 'Kegiatan 9')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('maulid.jpeg', 'Memperingati hari Maulid Nabi Muhammad SAW pada saat kelas 11.')}>
                             <img src="maulid.jpeg" alt="Kegiatan 9" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('batik.jpeg', 'Kegiatan 10')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('batik.jpeg', 'Memperingati hari Pahlawan Naional, dan memakai kostum batik semua.')}>
                             <img src="batik.jpeg" alt="Kegiatan 10" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('kelas.jpeg', 'Kegiatan 11')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('kelas.jpeg', 'Ikut melaksanakan lomba 17 Agustusan, di sini kita dapat juara 3 di lomba estafet campuran')}>
                             <img src="kelas.jpeg" alt="Kegiatan 11" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('lomba.jpeg', 'Kegiatan 12')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('lomba.jpeg', 'Merayakan hari diesnatalys SMK Pada saat kelas 10')}>
                             <img src="lomba.jpeg" alt="Kegiatan 12" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('jawa.jpeg', 'Kegiatan 13')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('jawa.jpeg', 'Deskripsi untuk Kegiatan 13: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="jawa.jpeg" alt="Kegiatan 13" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('disnatalis.jpeg', 'Kegiatan 14')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('disnatalis.jpeg', 'Deskripsi untuk Kegiatan 14: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="disnatalis.jpeg" alt="Kegiatan 14" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ujian.jpeg', 'Kegiatan 15')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ujian.jpeg', 'Deskripsi untuk Kegiatan 15: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="ujian.jpeg" alt="Kegiatan 15" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Kegiatan 16')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Deskripsi untuk Kegiatan 16: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="fotbar.jpg" alt="Kegiatan 16" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ftbr.jpeg', 'Kegiatan 17')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ftbr.jpeg', 'Deskripsi untuk Kegiatan 17: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="ftbr.jpeg" alt="Kegiatan 17" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Kegiatan 18')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Deskripsi untuk Kegiatan 18: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
                             <img src="tv.jpeg" alt="Kegiatan 18" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
