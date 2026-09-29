@@ -112,7 +112,7 @@ export default function Home() {
                             <h3>Intan</h3>
                             <p>NIS: 1001</p>
                         </div>
-                        <div className="anggota-card" data-tempat-lahir="Papua" data-tanggal-lahir="15 Maret 2005"
+                        <div className="anggota-card" data-tempat-lahir="Papua" data-tanggal-lahir="29 Juni 2009"
                             data-karakteristik="Orangnya suka tidur, suka mendengarkan musik, dan suka bermain game.">
                             <div className="card-img">
                                 <img src="etow.png" alt="Etow" />
@@ -440,75 +440,75 @@ export default function Home() {
                         <button className="tab-btn" onClick={(e) => window.filterGallery('ketiga', e.currentTarget)}>Ketiga</button>
                     </div>
                     <div className="gallery-grid">
-                        <div className="gallery-item pertama" style={{ display: 'none' }}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('mpls.jpeg', 'Kegiatan 1')}>
                             <img src="mpls.jpeg" alt="Kegiatan 1" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('senam.jpeg', 'Kegiatan 2')}>
                             <img src="senam.jpeg" alt="Kegiatan 2" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('ultah.jpeg', 'Kegiatan 3')}>
                             <img src="ultah.jpeg" alt="Kegiatan 3" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('padsu.jpeg', 'Kegiatan 4')}>
                             <img src="padsu.jpeg" alt="Kegiatan 4" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('kerkom.jpeg', 'Kegiatan 5')}>
                             <img src="kerkom.jpeg" alt="Kegiatan 5" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('515.jpeg', 'Kegiatan 6')}>
                             <img src="515.jpeg" alt="Kegiatan 6" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('metal.jpeg', 'Kegiatan 7')}>
                             <img src="metal.jpeg" alt="Kegiatan 7" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('ngaji.jpeg', 'Kegiatan 8')}>
                             <img src="ngaji.jpeg" alt="Kegiatan 8" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('maulid.jpeg', 'Kegiatan 9')}>
                             <img src="maulid.jpeg" alt="Kegiatan 9" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('batik.jpeg', 'Kegiatan 10')}>
                             <img src="batik.jpeg" alt="Kegiatan 10" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('kelas.jpeg', 'Kegiatan 11')}>
                             <img src="kelas.jpeg" alt="Kegiatan 11" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('lomba.jpeg', 'Kegiatan 12')}>
                             <img src="lomba.jpeg" alt="Kegiatan 12" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('jawa.jpeg', 'Kegiatan 13')}>
                             <img src="jawa.jpeg" alt="Kegiatan 13" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('disnatalis.jpeg', 'Kegiatan 14')}>
                             <img src="disnatalis.jpeg" alt="Kegiatan 14" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ujian.jpeg', 'Kegiatan 15')}>
                             <img src="ujian.jpeg" alt="Kegiatan 15" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Kegiatan 16')}>
                             <img src="fotbar.jpg" alt="Kegiatan 16" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ftbr.jpeg', 'Kegiatan 17')}>
                             <img src="ftbr.jpeg" alt="Kegiatan 17" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Kegiatan 18')}>
                             <img src="tv.jpeg" alt="Kegiatan 18" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
@@ -520,6 +520,7 @@ export default function Home() {
             <div id="imageModal" className="modal" onClick={() => window.closeModal()}>
                 <span className="close" onClick={() => window.closeModal()}>&times;</span>
                 <img className="modal-content" id="expandedImg" />
+                <div id="modalCaption" className="modal-caption"></div>
             </div>
 
             {/* Member Modal */}

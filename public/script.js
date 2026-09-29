@@ -12,18 +12,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Modal Logic for Gallery
-function openModal(imgSrc) {
+window.openModal = function(imgSrc, captionText) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("expandedImg");
+    const captionElement = document.getElementById("modalCaption");
     if (!modal || !modalImg) return;
     modal.style.display = "flex";
+    modal.style.flexDirection = "column";
     modal.style.justifyContent = "center";
     modal.style.alignItems = "center";
     modalImg.src = imgSrc;
+    if (captionElement) {
+        captionElement.textContent = captionText || "";
+        captionElement.style.display = "block";
+    }
     document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
 }
 
-function closeModal() {
+window.closeModal = function() {
     const modal = document.getElementById("imageModal");
     if (!modal) return;
     modal.style.display = "none";
@@ -165,8 +171,10 @@ function initInteractions() {
     document.querySelectorAll('.gallery-item').forEach(item => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
-            const imgSrc = this.querySelector('img').src;
-            openModal(imgSrc);
+            const imgElement = this.querySelector('img');
+            const imgSrc = imgElement.src;
+            const captionText = imgElement.alt;
+            window.openModal(imgSrc, captionText);
         });
     });
 
