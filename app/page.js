@@ -110,7 +110,7 @@ export default function Home() {
                                 <img src="intan.png" alt="Intan" />
                             </div>
                             <h3>Intan</h3>
-                            <p>NIS: 1001</p>
+                            <p>Absen: 01</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Papua" data-tanggal-lahir="29 Juni 2009"
                             data-karakteristik="Orangnya suka tidur, suka mendengarkan musik, dan suka bermain game.">
@@ -118,7 +118,7 @@ export default function Home() {
                                 <img src="etow.png" alt="Etow" />
                             </div>
                             <h3>Etow</h3>
-                            <p>NIS: 1002</p>
+                            <p>Absen: 02</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="06 April 2009"
                             data-karakteristik="Orangnya suka selfie, banyak omong/cerewet, dan suka make up.">
@@ -127,7 +127,7 @@ export default function Home() {
                                     alt="Kenza" />
                             </div>
                             <h3>Kenza</h3>
-                            <p>NIS: 1003</p>
+                            <p>Absen: 03</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="16 Januari 2009"
                             data-karakteristik="Orangnya sangat pendiam, teliti, dan suka belajar hal baru.">
@@ -135,7 +135,7 @@ export default function Home() {
                                 <img src="keyla.png" alt="Keyla" />
                             </div>
                             <h3>Keyla</h3>
-                            <p>NIS: 1004</p>
+                            <p>Absen: 04</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="07 Februari 2009"
                             data-karakteristik="Orangnya sangat suka berbicara/cerewet, pelawak, dan suka tidur saat di kelas.">
@@ -144,7 +144,7 @@ export default function Home() {
                                     alt="Keysa" />
                             </div>
                             <h3>Keysa</h3>
-                            <p>NIS: 1005</p>
+                            <p>Absen: 05</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Paleran" data-tanggal-lahir="13 July 2009"
                             data-karakteristik="Orangnya suka selfie, suka make up, dan dan suka jalan-jalan.">
@@ -153,7 +153,7 @@ export default function Home() {
                                     alt="Khoirun Nisa" />
                             </div>
                             <h3>Khoirun Nisa</h3>
-                            <p>NIS: 1006</p>
+                            <p>Absen: 06</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="22 November 2008"
                             data-karakteristik="Orangnya pendiam, suka mendengarkan musik, dan suka maen handphone saat di kelas.">
@@ -162,7 +162,7 @@ export default function Home() {
                                     alt="Latif" />
                             </div>
                             <h3>Latif</h3>
-                            <p>NIS: 1007</p>
+                            <p>Absen: 07</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="05 Maret 2009"
                             data-karakteristik="Orangnya banyak omong/cerewet, orang nya aktif/banyak tingkah, dan suka belajar hal baru.">
@@ -171,7 +171,7 @@ export default function Home() {
                                     alt="Cella" />
                             </div>
                             <h3>Cella</h3>
-                            <p>NIS: 1008</p>
+                            <p>Absen: 08</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="01 Mei 2009"
                             data-karakteristik="Orangnya pendiam, suka mendengarkan musik, dan suka belajar.">
@@ -179,7 +179,7 @@ export default function Home() {
                                 <img src="melani.png" alt="Meilani" />
                             </div>
                             <h3>Meilani</h3>
-                            <p>NIS: 1009</p>
+                            <p>Absen: 09</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="12 Desember 2008"
                             data-karakteristik="Orangnya suka makan, suka tidur di kelas, dan suka bermain handphone saat di kelas.">
@@ -187,7 +187,7 @@ export default function Home() {
                                 <img src="mita.png" alt="Mita" />
                             </div>
                             <h3>Mita</h3>
-                            <p>NIS: 1010</p>
+                            <p>Absen: 10</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="13 July 2009"
                             data-karakteristik="Orangnya sangat suka mendengarkan musik, suka tidur, dan suka memecahkan masalah coding.">
@@ -195,7 +195,7 @@ export default function Home() {
                                 <img src="finza.png" alt="finza" />
                             </div>
                             <h3>Finza</h3>
-                            <p>NIS: 1011</p>
+                            <p>Absen: 11</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Sukoreno" data-tanggal-lahir="21 Januari 2009"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka mencari pengetahuan baru.">
@@ -203,7 +203,7 @@ export default function Home() {
                                 <img src="alpha.png" alt="Alpha" />
                             </div>
                             <h3>Alpha</h3>
-                            <p>NIS: 1012</p>
+                            <p>Absen: 12</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Paleran" data-tanggal-lahir="10 September 2008"
                             data-karakteristik="Orangnya sangat suka maen game, suka makan, dan suka memecahkan masalah coding.">
@@ -211,7 +211,7 @@ export default function Home() {
                                 <img src="apan.png" alt="apan" />
                             </div>
                             <h3>Apan</h3>
-                            <p>NIS: 1013</p>
+                            <p>Absen: 13</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Wringintelu" data-tanggal-lahir="27 November 2008"
                             data-karakteristik="Orangnya sangat rajin, teliti, pendiam, dan suka memecahkan masalah coding.">
@@ -220,7 +220,7 @@ export default function Home() {
                                     alt="Najwa" />
                             </div>
                             <h3>Najwa</h3>
-                            <p>NIS: 1014</p>
+                            <p>Absen: 14</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="03 April 2009"
                             data-karakteristik="Orangnya sangat rajin (tergantung temen nya), teliti, dan suka belajar (tergantung temen nya).">
@@ -229,7 +229,7 @@ export default function Home() {
                                     alt="Natasha" />
                             </div>
                             <h3>Natasha</h3>
-                            <p>NIS: 1015</p>
+                            <p>Absen: 15</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Wringintelu" data-tanggal-lahir="17 Februari 2009"
                             data-karakteristik="Orangnya sangat rajin, suka rame di kelas (tergantung temen), teliti, dan suka ngoding.">
@@ -238,7 +238,7 @@ export default function Home() {
                                     alt="Nika" />
                             </div>
                             <h3>Nika</h3>
-                            <p>NIS: 1016</p>
+                            <p>Absen: 16</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="11 November 2008"
                             data-karakteristik="Orangnya pendiam, suka maen handphone dikelas, dan banyak tingkah.">
@@ -247,7 +247,7 @@ export default function Home() {
                                     alt="Novita" />
                             </div>
                             <h3>Novita</h3>
-                            <p>NIS: 1017</p>
+                            <p>Absen: 17</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="20 Agustus 2008"
                             data-karakteristik="Orangnya sangat pendiam, aktif (tergantung temen), teliti, dan suka memecahkan masalah coding.">
@@ -256,7 +256,7 @@ export default function Home() {
                                     alt="Layli" />
                             </div>
                             <h3>Layli</h3>
-                            <p>NIS: 1018</p>
+                            <p>Absen: 18</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="26 July 2008"
                             data-karakteristik="Orangnya banyak ngomong, aktif (tergantung temen), dan suka ngoding.">
@@ -265,7 +265,7 @@ export default function Home() {
                                     alt="Nurinda" />
                             </div>
                             <h3>Nurinda</h3>
-                            <p>NIS: 1019</p>
+                            <p>Absen: 19</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="10 Januari 2009"
                             data-karakteristik="Orangnya aktif (tergantung temen), suka tidur dikelas, dan suka belajar coding (kalau mood).">
@@ -274,7 +274,7 @@ export default function Home() {
                                     alt="Putri" />
                             </div>
                             <h3>Putri</h3>
-                            <p>NIS: 1020</p>
+                            <p>Absen: 20</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="29 July 2009"
                             data-karakteristik="Orangnya sangat pendiam, aktif (tergantung temen), teliti, dan suka ngoding.">
@@ -283,7 +283,7 @@ export default function Home() {
                                     alt="Rahill" />
                             </div>
                             <h3>Rahill</h3>
-                            <p>NIS: 1021</p>
+                            <p>Absen: 21</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tanggul" data-tanggal-lahir="02 Februari 2009"
                             data-karakteristik="Orangnya suka tidur di kelas, suka make up, dan suka maen handphone saat di kelas.">
@@ -292,7 +292,7 @@ export default function Home() {
                                     alt="Rara" />
                             </div>
                             <h3>Rara</h3>
-                            <p>NIS: 1022</p>
+                            <p>Absen: 22</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Karang Duren" data-tanggal-lahir="20 November 2008"
                             data-karakteristik="Orangnya sangat rajin, aktif, dan suka belajar hal baru.">
@@ -301,7 +301,7 @@ export default function Home() {
                                     alt="Lina" />
                             </div>
                             <h3>Lina</h3>
-                            <p>NIS: 1023</p>
+                            <p>Absen: 23</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Paleran" data-tanggal-lahir="11 July 2009"
                             data-karakteristik="Orangnya sangat tidur, aktif (kalau kumpul sama temen nya), dan suka maen handphone saat di kelas.">
@@ -310,7 +310,7 @@ export default function Home() {
                                     alt="Risma" />
                             </div>
                             <h3>Risma</h3>
-                            <p>NIS: 1024</p>
+                            <p>Absen: 24</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="20 Juni 2008"
                             data-karakteristik="Orangnya suka make up, suka bercanda, dan suka maen handphone saat di kelas.">
@@ -319,7 +319,7 @@ export default function Home() {
                                     alt="Rani" />
                             </div>
                             <h3>Rani</h3>
-                            <p>NIS: 1025</p>
+                            <p>Absen: 25</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="31 Agustus 2008"
                             data-karakteristik="Orangnya sangat pendiam, aktif (tergantung temen), dan suka memecahkan masalah coding.">
@@ -328,7 +328,7 @@ export default function Home() {
                                     alt="Sabrina Ayu" />
                             </div>
                             <h3>Sabrina Ayu</h3>
-                            <p>NIS: 1026</p>
+                            <p>Absen: 26</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="19 November 2008"
                             data-karakteristik="Orangnya sangat aktif, suka bercanda, dan suka memecahkan masalah coding.">
@@ -337,7 +337,7 @@ export default function Home() {
                                     alt="Sabrina Eka" />
                             </div>
                             <h3>Sabrina Eka</h3>
-                            <p>NIS: 1027</p>
+                            <p>Absen: 27</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="24 Oktober 2008"
                             data-karakteristik="Orangnya sangat pendiam, aktif (tergantung temen), suka maen handphone saat di kelas, dan suka tidur saat di kelas.">
@@ -346,7 +346,7 @@ export default function Home() {
                                     alt="Safira" />
                             </div>
                             <h3>Safira</h3>
-                            <p>NIS: 1028</p>
+                            <p>Absen: 28</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tanggul" data-tanggal-lahir="30 Mei 2009"
                             data-karakteristik="Orangnya sangat rajin, pendiam, teliti, dan suka memecahkan masalah coding.">
@@ -355,16 +355,16 @@ export default function Home() {
                                     alt="Ayun" />
                             </div>
                             <h3>Ayun</h3>
-                            <p>NIS: 1029</p>
+                            <p>Absen: 29</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="26 Agustus 2008"
                             data-karakteristik="Orangnya sangat aktif, suka bercanda, dan suka memecahkan masalah coding.">
                             <div className="card-img">
-                                <img src="silvi.png"
+                                <img src="silpi.png"
                                     alt="Silvi" />
                             </div>
                             <h3>Silvi</h3>
-                            <p>NIS: 1030</p>
+                            <p>Absen: 30</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Tembokrejo" data-tanggal-lahir="12 Agustus 2009"
                             data-karakteristik="Orangnya suka berguarau, suka make up, suka selfie, dan suka tidur saat di kelas.">
@@ -373,7 +373,7 @@ export default function Home() {
                                     alt="Aisyah" />
                             </div>
                             <h3>Aisyah</h3>
-                            <p>NIS: 1031</p>
+                            <p>Absen: 31</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="09 Desember 2008"
                             data-karakteristik="Orangnya banyak omong/cerewet, pendiam, aktif, dan suka belajar hal baru.">
@@ -382,7 +382,7 @@ export default function Home() {
                                     alt="Shisil" />
                             </div>
                             <h3>Shisil</h3>
-                            <p>NIS: 1032</p>
+                            <p>Absen: 32</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Umbulsari" data-tanggal-lahir="24 Oktober 2008"
                             data-karakteristik="Orangnya suka pergi ke kantin saat jam pelajaran, suka tidur saat di kelas, dan suka bermain handphone saat di kelas.">
@@ -391,7 +391,7 @@ export default function Home() {
                                     alt="Azzahratun Nisa" />
                             </div>
                             <h3>Azzahratun Nisa</h3>
-                            <p>NIS: 1033</p>
+                            <p>Absen: 33</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Jember" data-tanggal-lahir="12 Desember 2009"
                             data-karakteristik=" Orangnya suka tidur, suka makan, dan suka rame saat di kelas.">
@@ -399,7 +399,7 @@ export default function Home() {
                                 <img src="oke.jpeg" alt="Edooo" />
                             </div>
                             <h3>Edooo</h3>
-                            <p>NIS: 1034</p>
+                            <p>Absen: 34</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Gadungan" data-tanggal-lahir="21 Januari 2009"
                             data-karakteristik="Orangnya sangat rajin, teliti, dan suka memecahkan masalah coding.">
@@ -407,7 +407,7 @@ export default function Home() {
                                 <img src="verdi.png" alt="Verdi" />
                             </div>
                             <h3>Verdi</h3>
-                            <p>NIS: 1035</p>
+                            <p>Absen: 35</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="27 September 2009"
                             data-karakteristik="Orangnya banyak omong/cerewet, suka selfie, aktif (tergantung temen nya), dan suka make up.">
@@ -416,7 +416,7 @@ export default function Home() {
                                     alt="Vidya" />
                             </div>
                             <h3>Vidya</h3>
-                            <p>NIS: 1036</p>
+                            <p>Absen: 36</p>
                         </div>
                         <div className="anggota-card" data-tempat-lahir="Puger" data-tanggal-lahir="27 July 2009"
                             data-karakteristik="Orangnya suka ke kantin saat jam pelajaran, suka makan di kelas, dan suka tidur di kelas.">
@@ -425,7 +425,7 @@ export default function Home() {
                                     alt="Wardah" />
                             </div>
                             <h3>Wardah</h3>
-                            <p>NIS: 1037</p>
+                            <p>Absen: 37</p>
                         </div>
                     </div>
                 </div>
@@ -448,7 +448,7 @@ export default function Home() {
                             <img src="senam.jpeg" alt="Kegiatan 2" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('ultah.jpeg', 'Memberikan suprice HARI GURU kepada wali kelas.')}>
+                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('ultah.jpeg', 'Memberikan suprise HARI GURU kepada wali kelas.')}>
                             <img src="ultah.jpeg" alt="Kegiatan 3" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
@@ -484,7 +484,7 @@ export default function Home() {
                             <img src="kelas.jpeg" alt="Kegiatan 11" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('lomba.jpeg', 'Merayakan hari diesnatalys SMK Pada saat kelas 10')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('lomba.jpeg', 'Merayakan hari disnatalis SMK Pada saat kelas 10')}>
                             <img src="lomba.jpeg" alt="Kegiatan 12" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
@@ -500,7 +500,7 @@ export default function Home() {
                             <img src="ujian.jpeg" alt="Kegiatan 15" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Sholawatan Before Party diesnatalys pada saat kelas 11.')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Sholawatan Before Party disnatalis pada saat kelas 11.')}>
                             <img src="fotbar.jpg" alt="Kegiatan 16" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
@@ -508,7 +508,7 @@ export default function Home() {
                             <img src="ftbr.jpeg" alt="Kegiatan 17" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Fotbar sama Aak kelas RPL 1')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Fotbar sama Anak kelas RPL 1')}>
                             <img src="tv.jpeg" alt="Kegiatan 18" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
