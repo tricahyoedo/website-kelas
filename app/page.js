@@ -61,37 +61,37 @@ export default function Home() {
 
                         <div className="card">
                             <div className="card-img">
-                                <img src="verdi.jpeg" alt="Ketua Kelas" />
+                                <img src="finza.png" alt="Ketua Kelas" />
                             </div>
                             <h3>Ketua Kelas</h3>
                         </div>
                         <div className="card">
                             <div className="card-img">
-                                <img src="nisa.jpeg" alt="Wakil Ketua Kelas" />
+                                <img src="ayu.png" alt="Wakil Ketua Kelas" />
                             </div>
                             <h3>Wakil Ketua</h3>
                         </div>
                         <div className="card">
                             <div className="card-img">
-                                <img src="rara.jpeg" alt="Sekretaris 1" />
+                                <img src="nur.jpg" alt="Sekretaris 1" />
                             </div>
                             <h3>Sekretaris 1</h3>
                         </div>
                         <div className="card">
                             <div className="card-img">
-                                <img src="sekre2.jpeg" alt="Sekretaris 2" />
+                                <img src="alpha.png" alt="Sekretaris 2" />
                             </div>
                             <h3>Sekretaris 2</h3>
                         </div>
                         <div className="card">
                             <div className="card-img">
-                                <img src="vidya.jpeg" alt="Bendahara 1" />
+                                <img src="brina.jpg" alt="Bendahara 1" />
                             </div>
                             <h3>Bendahara 1</h3>
                         </div>
                         <div className="card">
                             <div className="card-img">
-                                <img src="putri.jpeg" alt="Bendahara 2" />
+                                <img src="intan.png" alt="Bendahara 2" />
                             </div>
                             <h3>Bendahara 2</h3>
                         </div>
@@ -261,7 +261,7 @@ export default function Home() {
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
                             data-karakteristik="Orangnya banyak ngomong, aktif (tergantung temen), dan suka ngoding.">
                             <div className="card-img">
-                                <img src="nurin.png"
+                                <img src="nur.jpg"
                                     alt="Nurinda" />
                             </div>
                             <h3>Nurinda</h3>
@@ -333,7 +333,7 @@ export default function Home() {
                         <div className="anggota-card" data-tempat-lahir="Semboro" data-tanggal-lahir="15 Maret 2005"
                             data-karakteristik="Orangnya sangat aktif, suka bercanda, dan suka memecahkan masalah coding.">
                             <div className="card-img">
-                                <img src="eka.png"
+                                <img src="brina.jpg"
                                     alt="Sabrina Eka" />
                             </div>
                             <h3>Sabrina Eka</h3>
@@ -464,7 +464,7 @@ export default function Home() {
                             <img src="515.jpeg" alt="Kegiatan 6" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('metal.jpeg', 'Deskripsi untuk Kegiatan 7: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('metal.jpeg', 'Memperingati Hari R.A K  artini')}>
                             <img src="metal.jpeg" alt="Kegiatan 7" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
@@ -488,27 +488,27 @@ export default function Home() {
                             <img src="lomba.jpeg" alt="Kegiatan 12" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('jawa.jpeg', 'Deskripsi untuk Kegiatan 13: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('jawa.jpeg', 'Memperingati Hari Sumpah Pemuda.')}>
                             <img src="jawa.jpeg" alt="Kegiatan 13" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('disnatalis.jpeg', 'Deskripsi untuk Kegiatan 14: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('disnatalis.jpeg', 'Ikut melaksanakan Hari Dienatalys pada saat kelas 11.')}>
                             <img src="disnatalis.jpeg" alt="Kegiatan 14" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ujian.jpeg', 'Deskripsi untuk Kegiatan 15: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ujian.jpeg', 'Foto after ujian jurusan bersama SmartKoding.')}>
                             <img src="ujian.jpeg" alt="Kegiatan 15" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Deskripsi untuk Kegiatan 16: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Sholawatan Before Party diesnatalys pada saat kelas 11.')}>
                             <img src="fotbar.jpg" alt="Kegiatan 16" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ftbr.jpeg', 'Deskripsi untuk Kegiatan 17: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ftbr.jpeg', 'Fotbar sama Anak kelas RPL 1')}>
                             <img src="ftbr.jpeg" alt="Kegiatan 17" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Deskripsi untuk Kegiatan 18: Silakan edit keterangan ini sesuai dengan kegiatan yang ada di foto tersebut')}>
+                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Fotbar sama Aak kelas RPL 1')}>
                             <img src="tv.jpeg" alt="Kegiatan 18" />
                             <div className="overlay"><span>Lihat Foto</span></div>
                         </div>
