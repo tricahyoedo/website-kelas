@@ -1,9 +1,54 @@
 
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+    const [activeTab, setActiveTab] = useState('pertama');
+    const [selectedAlbum, setSelectedAlbum] = useState(null);
+    const [selectedPhotoIdx, setSelectedPhotoIdx] = useState(0);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    const albumsData = [
+        { id: 1, tab: 'pertama', cover: "mpls.jpeg", title: "Masa MPLS", desc: "Masa MPLS, dimana semua murid saling berkenalan satu sama lain bersama teman barunya.", photos: ["mpls.jpeg", "mp3.jpg", "mp4.jpg", "mp5.jpg", "mp6.jpg"] },
+        { id: 2, tab: 'pertama', cover: "padsu.jpeg", title: "Lomba Paduan Suara", desc: "Melaksanakan lomba terakhir pada saat MPLS, Yaitu lomba Paduan Suara.", photos: ["padsu.jpeg", "padsu2.jpg",] },
+        { id: 3, tab: 'pertama', cover: "ultah.jpeg", title: "Hari Guru", desc: "Memberikan suprise HARI GURU kepada wali kelas.", photos: ["ultah.jpeg", "fotbar.jpg"] },
+        { id: 4, tab: 'pertama', cover: "padsu.jpeg", title: "Lomba Paduan Suara", desc: "Melaksanakan lomba terakhir pada saat MPLS, Yaitu lomba Paduan Suara.", photos: ["padsu.jpeg", "mpls.jpeg"] },
+        { id: 5, tab: 'pertama', cover: "kerkom.jpeg", title: "Kerja Kelompok", desc: "First Time kerja kelompok Di rumah mbak Intan.", photos: ["kerkom.jpeg"] },
+        { id: 6, tab: 'pertama', cover: "515.jpeg", title: "Barak Militer", desc: "Menginap di barak militer 515 di tanggul pada saat hari terakhir MPLS, selama 2 Hari 1 Malam.", photos: ["515.jpeg", "mpls.jpeg"] },
+        { id: 7, tab: 'pertama', cover: "metal.jpeg", title: "Hari Kartini", desc: "Memperingati Hari R.A Kartini", photos: ["metal.jpeg"] },
+        { id: 8, tab: 'pertama', cover: "ngaji.jpeg", title: "Maulid Nabi Kelas 10", desc: "Meperingati hari Maulid Nabi Muhammad SAW pada saat kelas 10.", photos: ["ngaji.jpeg", "maulid.jpeg"] },
+        { id: 9, tab: 'kedua', cover: "maulid.jpeg", title: "Maulid Nabi Kelas 11", desc: "Memperingati hari Maulid Nabi Muhammad SAW pada saat kelas 11.", photos: ["maulid.jpeg", "ngaji.jpeg"] },
+        { id: 10, tab: 'kedua', cover: "batik.jpeg", title: "Hari Pahlawan", desc: "Memperingati hari Pahlawan Nasional, dan memakai kostum batik semua.", photos: ["batik.jpeg"] },
+        { id: 11, tab: 'kedua', cover: "kelas.jpeg", title: "Lomba 17 Agustusan", desc: "Ikut melaksanakan lomba 17 Agustusan, di sini kita dapat juara 3 di lomba estafet campuran", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 12, tab: 'kedua', cover: "lomba.jpeg", title: "Disnatalis Kelas 10", desc: "Merayakan hari disnatalis SMK Pada saat kelas 10", photos: ["lomba.jpeg", "disnatalis.jpeg"] },
+        { id: 13, tab: 'kedua', cover: "jawa.jpeg", title: "Hari Sumpah Pemuda", desc: "Memperingati Hari Sumpah Pemuda.", photos: ["jawa.jpeg"] },
+        { id: 14, tab: 'kedua', cover: "disnatalis.jpeg", title: "Disnatalis Kelas 11", desc: "Ikut melaksanakan Hari Disnatalis pada saat kelas 11.", photos: ["disnatalis.jpeg", "lomba.jpeg"] },
+        { id: 15, tab: 'kedua', cover: "ujian.jpeg", title: "Ujian Jurusan", desc: "Foto after ujian jurusan bersama SmartKoding.", photos: ["ujian.jpeg"] },
+        { id: 16, tab: 'kedua', cover: "fotbar.jpg", title: "Sholawatan", desc: "Sholawatan Before Party disnatalis pada saat kelas 11.", photos: ["fotbar.jpg", "ultah.jpeg"] },
+        { id: 17, tab: 'ketiga', cover: "ftbr.jpeg", title: "Fotbar RPL 1", desc: "Fotbar sama Anak kelas RPL 1", photos: ["ftbr.jpeg", "tv.jpeg"] },
+        { id: 18, tab: 'ketiga', cover: "tv.jpeg", title: "Nobar TV", desc: "Fotbar sama Anak kelas RPL 1", photos: ["tv.jpeg", "ftbr.jpeg"] },
+        { id: 19, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 19", desc: "Deskripsi kegiatan 19", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 20, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 20", desc: "Deskripsi kegiatan 20", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 21, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 21", desc: "Deskripsi kegiatan 21", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 22, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 22", desc: "Deskripsi kegiatan 22", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 23, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 23", desc: "Deskripsi kegiatan 23", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 24, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 24", desc: "Deskripsi kegiatan 24", photos: ["kelas.jpeg", "senam.jpeg"] },
+        { id: 25, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 25", desc: "Deskripsi kegiatan 25", photos: ["kelas.jpeg", "senam.jpeg"] }
+    ];
+
+    const openPresentation = (album) => {
+        setSelectedAlbum(album);
+        setSelectedPhotoIdx(0);
+        setIsFullscreen(false);
+        document.body.style.overflow = "hidden";
+    };
+
+    const closePresentation = () => {
+        setSelectedAlbum(null);
+        document.body.style.overflow = "auto";
+    };
+
     return (
         <>
 
@@ -33,7 +78,7 @@ export default function Home() {
                 <div className="container">
                     <h2 className="section-title">Tentang Kami</h2>
                     <div className="tentang-image">
-                        <img src="fotbar.jpg" alt="Foto Bersama Kelas" className="tentang-img" />
+                        <img src="jawa.jpeg" alt="Foto Bersama Kelas" className="tentang-img" />
                     </div>
                     <div className="tentang-content"
                         style={{ textAlign: 'left', marginTop: '40px', maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -306,7 +351,7 @@ export default function Home() {
                         <div className="anggota-card" data-tempat-lahir="Jember" data-tanggal-lahir="11 July 2009"
                             data-karakteristik="Orangnya sangat tidur, aktif (kalau kumpul sama temen nya), dan suka maen handphone saat di kelas.">
                             <div className="card-img">
-                                <img src="risma.png"
+                                <img src="brut.jpg"
                                     alt="Risma" />
                             </div>
                             <h3>Risma</h3>
@@ -435,86 +480,66 @@ export default function Home() {
                 <div className="container">
                     <h2 className="section-title">Album Kegiatan</h2>
                     <div className="album-tabs">
-                        <button className="tab-btn active" onClick={(e) => window.filterGallery('pertama', e.currentTarget)}>Pertama</button>
-                        <button className="tab-btn" onClick={(e) => window.filterGallery('kedua', e.currentTarget)}>Kedua</button>
-                        <button className="tab-btn" onClick={(e) => window.filterGallery('ketiga', e.currentTarget)}>Ketiga</button>
+                        <button className="tab-btn active" onClick={(e) => { setActiveTab('pertama'); window.filterGallery('pertama', e.currentTarget); }}>Pertama</button>
+                        <button className="tab-btn" onClick={(e) => { setActiveTab('kedua'); window.filterGallery('kedua', e.currentTarget); }}>Kedua</button>
+                        <button className="tab-btn" onClick={(e) => { setActiveTab('ketiga'); window.filterGallery('ketiga', e.currentTarget); }}>Ketiga</button>
                     </div>
                     <div className="gallery-grid">
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('mpls.jpeg', 'Masa MPLS, dimana semua murid saling berkenalan satu sama lain bersama teman barunya.')}>
-                            <img src="mpls.jpeg" alt="Kegiatan 1" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('senam.jpeg', 'Ikut melaksanakan lomba joget kreasi, serta meramaikan acara kemerdekaan.')}>
-                            <img src="senam.jpeg" alt="Kegiatan 2" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('ultah.jpeg', 'Memberikan suprise HARI GURU kepada wali kelas.')}>
-                            <img src="ultah.jpeg" alt="Kegiatan 3" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('padsu.jpeg', 'Melaksanakan lomba terakhir pada saat MPLS, Yaitu lomba Paduan Suara.')}>
-                            <img src="padsu.jpeg" alt="Kegiatan 4" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('kerkom.jpeg', 'First Time kerja kelompok Di rumah mbak Intan.')}>
-                            <img src="kerkom.jpeg" alt="Kegiatan 5" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item pertama" style={{ display: 'none' }} onClick={() => window.openModal('515.jpeg', 'Menginap di barak militer 515 di tanggul pada saat hari terakhir MPLS, selama 2 Hari 1 Malam.')}>
-                            <img src="515.jpeg" alt="Kegiatan 6" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('metal.jpeg', 'Memperingati Hari R.A K  artini')}>
-                            <img src="metal.jpeg" alt="Kegiatan 7" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('ngaji.jpeg', 'Meperingati hari Maulid Nabi Muhammad SAW pada saat kelas 10.')}>
-                            <img src="ngaji.jpeg" alt="Kegiatan 8" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('maulid.jpeg', 'Memperingati hari Maulid Nabi Muhammad SAW pada saat kelas 11.')}>
-                            <img src="maulid.jpeg" alt="Kegiatan 9" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('batik.jpeg', 'Memperingati hari Pahlawan Nasional, dan memakai kostum batik semua.')}>
-                            <img src="batik.jpeg" alt="Kegiatan 10" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('kelas.jpeg', 'Ikut melaksanakan lomba 17 Agustusan, di sini kita dapat juara 3 di lomba estafet campuran')}>
-                            <img src="kelas.jpeg" alt="Kegiatan 11" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item kedua" style={{ display: 'none' }} onClick={() => window.openModal('lomba.jpeg', 'Merayakan hari disnatalis SMK Pada saat kelas 10')}>
-                            <img src="lomba.jpeg" alt="Kegiatan 12" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('jawa.jpeg', 'Memperingati Hari Sumpah Pemuda.')}>
-                            <img src="jawa.jpeg" alt="Kegiatan 13" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('disnatalis.jpeg', 'Ikut melaksanakan Hari Disnatalis pada saat kelas 11.')}>
-                            <img src="disnatalis.jpeg" alt="Kegiatan 14" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ujian.jpeg', 'Foto after ujian jurusan bersama SmartKoding.')}>
-                            <img src="ujian.jpeg" alt="Kegiatan 15" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('fotbar.jpg', 'Sholawatan Before Party disnatalis pada saat kelas 11.')}>
-                            <img src="fotbar.jpg" alt="Kegiatan 16" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('ftbr.jpeg', 'Fotbar sama Anak kelas RPL 1')}>
-                            <img src="ftbr.jpeg" alt="Kegiatan 17" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
-                        <div className="gallery-item ketiga" style={{ display: 'none' }} onClick={() => window.openModal('tv.jpeg', 'Fotbar sama Anak kelas RPL 1')}>
-                            <img src="tv.jpeg" alt="Kegiatan 18" />
-                            <div className="overlay"><span>Lihat Foto</span></div>
-                        </div>
+                        {albumsData.map(album => (
+                            <div key={album.id} className={`gallery-item ${album.tab}`} style={{ display: album.tab === activeTab ? 'block' : 'none' }} onClick={() => openPresentation(album)}>
+                                <img src={album.cover} alt={album.title} />
+                                <div className="overlay"><span>Lihat Foto</span></div>
+                                <h3 style={{ marginTop: '10px', fontSize: '1.1rem', color: 'var(--text-main)', textAlign: 'center' }}>{album.title}</h3>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
+
+            {/* Presentation Modal */}
+            {selectedAlbum && (
+                <div className="presentation-modal">
+                    <span className="presentation-close" onClick={closePresentation}>&times;</span>
+
+                    <div className="presentation-content">
+                        {/* Sidebar for thumbnails */}
+                        <div className="presentation-sidebar">
+                            <h3 className="presentation-title">{selectedAlbum.title}</h3>
+                            <p className="presentation-desc">{selectedAlbum.desc}</p>
+                            <div className="presentation-thumbnails">
+                                {selectedAlbum.photos.map((photo, idx) => (
+                                    <img
+                                        key={idx}
+                                        src={photo}
+                                        alt={`Thumbnail ${idx + 1}`}
+                                        className={`presentation-thumb ${idx === selectedPhotoIdx ? 'active' : ''}`}
+                                        onClick={() => setSelectedPhotoIdx(idx)}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Main Image Viewer */}
+                        <div className="presentation-main">
+                            <img
+                                src={selectedAlbum.photos[selectedPhotoIdx]}
+                                alt="Main viewer"
+                                className="presentation-main-img"
+                                onClick={() => setIsFullscreen(true)}
+                            />
+                            <p className="zoom-hint">Klik gambar untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Fullscreen Zoom Modal */}
+            {isFullscreen && selectedAlbum && (
+                <div className="zoom-modal" onClick={() => setIsFullscreen(false)}>
+                    <span className="close">&times;</span>
+                    <img className="zoom-modal-content" src={selectedAlbum.photos[selectedPhotoIdx]} />
+                </div>
+            )}
 
             {/* Modal Lightbox */}
             <div id="imageModal" className="modal" onClick={() => window.closeModal()}>

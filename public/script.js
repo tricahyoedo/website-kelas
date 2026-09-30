@@ -167,16 +167,7 @@ function initInteractions() {
     // Initialize Theme Toggle
     initThemeToggle();
 
-    // Attach click listeners to gallery items so modal opens the corresponding thumbnail
-    document.querySelectorAll('.gallery-item').forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-            const imgElement = this.querySelector('img');
-            const imgSrc = imgElement.src;
-            const captionText = imgElement.alt;
-            window.openModal(imgSrc, captionText);
-        });
-    });
+    // (Removed old gallery click listener to use React presentation modal)
 
     // Attach click listeners to anggota cards so modal opens the corresponding data
     document.querySelectorAll('.anggota-card, .wali-kelas').forEach(card => {
