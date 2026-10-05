@@ -25,7 +25,7 @@ export default function Home() {
         { id: 13, tab: 'kedua', cover: "mbg1.jpg", title: "Makan Bergizi", desc: "Menikmati Makan Bergizi Dari Bapak Prabowo.", photos: ["mbg1.jpg", "mbg2.jpg", "mbg3.jpg", "mbg4.jpg"] },
         { id: 14, tab: 'kedua', cover: "fotbar.jpg", title: "Hari Santri", desc: "Memperingati Hari Santri.", photos: ["fotbar.jpeg", "fotbar2.jpg", "fotbar3.jpg"] },
         { id: 15, tab: 'kedua', cover: "ujian.jpeg", title: "Ujian Jurusan", desc: "Foto after ujian jurusan bersama SmartKoding.", photos: ["ujian.jpeg", "ujian1.jpg", "ujian2.jpg", "ujian3.jpg", "ujian4.jpg"] },
-        { id: 16, tab: 'kedua', cover: "fotbar.jpg", title: "Sholawatan", desc: "Sholawatan Before Party disnatalis pada saat kelas 11.", photos: ["fotbar.jpg", "ultah.jpeg"] },
+        { id: 16, tab: 'kedua', cover: "bakar.jpg", title: "Bakar", desc: "Mengadakan acara bakar bakar di rumah bapak farukh, meramaikan acara akhir tahun.", photos: ["bakar.jpg", "bakar1.jpg", "bakar2.jpg"] },
         { id: 17, tab: 'ketiga', cover: "ftbr.jpeg", title: "Fotbar RPL 1", desc: "Fotbar sama Anak kelas RPL 1", photos: ["ftbr.jpeg", "tv.jpeg"] },
         { id: 18, tab: 'ketiga', cover: "tv.jpeg", title: "Nobar TV", desc: "Fotbar sama Anak kelas RPL 1", photos: ["tv.jpeg", "ftbr.jpeg"] },
         { id: 19, tab: 'ketiga', cover: "kelas.jpeg", title: "Kegiatan 19", desc: "Deskripsi kegiatan 19", photos: ["kelas.jpeg", "senam.jpeg"] },
